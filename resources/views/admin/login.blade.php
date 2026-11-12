@@ -50,7 +50,7 @@
                     <div class="lock-image col-12 col-sm-5"></div>
                     <div class="login-form col-12 col-sm-7">
                         <div class="form-group mb-3">
-                            <label for="emailaddress">Email address</label>
+                            <label for="emailaddress">Email address OK</label>
                             <input class="form-control @error('emailaddress') is-invalid @enderror" type="email" value = "{{ old('email') }}" name = "email"
                                 id="emailaddress" required="" placeholder="Enter your email">
                             @error('emailaddress')
