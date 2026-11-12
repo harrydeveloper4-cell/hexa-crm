@@ -1,0 +1,18 @@
+name: Deploy
+Trigger the workflow on push andpull request events on the main branchon:
+push:
+branches: [“main”]
+pull_request:
+branches: [“main”]Authenticate to the the server via sshand run our deployment scriptjobs:
+deploy:
+runs-on: ubuntu-latest
+steps:
+- uses: actions/checkout@v3
+- name: Deploy to Server
+uses: appleboy/ssh-action@master
+with:
+host: ${{ secrets.HOST }}
+username: ${{ secrets.USERNAME }}
+port: ${{ secrets.PORT }}
+key: ${{ secrets.SSHKEY }}
+script: “cd /var/www/html/aws-ec2-vps-deployment && ./.scripts/deploy.sh”
