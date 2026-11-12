@@ -25,6 +25,7 @@ jobs:
           username: ${{ secrets.USERNAME }}
           port: ${{ secrets.PORT }}
           key: ${{ secrets.SSHKEY }}
+          passphrase: ${{ secrets.PASSPHRASE }}
           script: |
             cd /home/demosvti/public_html/payment
             chmod +x .scripts/deploy.sh
