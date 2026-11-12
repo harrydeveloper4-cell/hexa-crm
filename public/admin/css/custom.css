@@ -1,0 +1,3430 @@
+@font-face {
+  font-family: "GT Walsheim-pro-bold";
+  src: url("../fonts/GT Walsheim-pro-bold.ttf");
+}
+@font-face {
+  font-family: "GTWalsheimProMedium";
+  src: url("../fonts/GTWalsheimProMedium.ttf");
+}
+@font-face {
+  font-family: "GT Walsheim-pro-regular";
+  src: url("../fonts/GT Walsheim-pro-regular.ttf");
+}
+@font-face {
+  font-family: "";
+  src: url("../fonts/");
+}
+@font-face {
+  font-family: "";
+  src: url("../fonts/");
+}
+@font-face {
+  font-family: "";
+  src: url("../fonts/");
+}
+@charset "utf-8";
+/* CSS Document */
+body, html{
+    height: 100%;
+}
+body{
+    background: #fff;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Montserrat', sans-serif;
+}
+p{
+    font-family: 'Roboto', sans-serif;
+}
+h1, h2, h3, h4, h5, h6, p, a, ul, li{
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+a {
+    text-decoration: none !important;
+    transition: all 0.5s;
+}
+.carousel-item img {
+    width: 100%;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style: none;
+}
+div#navbarCollapse {
+    flex-direction: row-reverse;
+}
+
+
+
+
+section.inner-banner {
+    position: relative;
+}
+
+section.inner-banner img {
+    width: 100%;
+}
+#upload-file {
+    display: none;
+}   
+
+.inner-cap {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inner-cap h4 {
+    font-size: 75px;
+    text-transform: uppercase;
+    font-family: "GT Walsheim-pro-bold";
+}
+.inner-cap h4 span {
+    color: #33a2c2;
+}
+
+
+.bnr-heading {
+    text-align: center;
+    position: absolute;
+    top: 156px;
+    left: 0;
+    right: 0;
+}
+
+.bnr-heading h1 {
+    text-transform: uppercase;
+    font-size: 75px;
+    position: relative;
+    color: #000;
+    font-family: "GT Walsheim-pro-bold";
+}
+
+.bnr-heading span {
+    color: #018cb3;
+}
+.carousel-item.active img {
+    position: relative;
+}
+
+.bnr-heading p {
+    font-size: 22px;
+    color: #000;
+    margin-top: 30px;
+    opacity: 75%;
+    font-family: 'GT Walsheim-pro-regular';
+}
+.bnr-heading h1::before {
+    content: '';
+    background: url(../images/bnr-img.png);
+    position: absolute;
+    width: 30%;
+    background-repeat: no-repeat;
+    height: 500px;
+    left: 0;
+    top: 30px;
+}
+.bnr-heading h2 {
+    text-transform: uppercase;
+    font-size: 75px;
+    color: #000;
+    font-family: 'GT Walsheim-pro-bold';
+}
+
+.bnr-heading h1::after{
+    content: '';
+    background: url(../images/bnr-img2.png);
+    position: absolute;
+    width: 18%;
+    background-repeat: no-repeat;
+    height: 517px;
+    top: -20px;
+    right: 0;
+}
+
+form.form-inline input {
+    padding: 20px;
+}
+
+.search-form button {
+    background-color: #004789;
+    padding: 20px 40px;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    font-family: GTWalsheimPro-Bold;
+    font-size: 20px;
+    position: absolute;
+    right: 23px;
+}
+
+.search-form form {
+    border: 1px solid #00000017;
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    align-items: center;
+    margin: 0 auto;
+    position: relative;
+    border-radius: 50px;
+    background-color: #fff;
+    box-shadow: 0 0 30px #00000012;
+}
+
+section.simple-steps {
+    background-color: #fafbfd;
+    padding-top: 100px;
+    padding-bottom: 200px;
+}
+.title-heading span {
+    color: #018cb3;
+}
+
+.title-heading h2 {
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 100px;
+    text-transform: uppercase;
+    color: #000;
+    font-family: 'GT Walsheim-pro-bold';
+}
+
+.simple-images {
+    background-color: #fff;
+    width: 70%;
+    height: 230px;
+    border-radius: 50%;
+    box-shadow: 0 0 50px #0000001a;
+}
+
+.simple-images img {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 60px;
+    height: 240px;
+}
+.simp-img3 img {
+    width: 100%;
+    margin: 0 auto;
+    padding: 60px;
+    height: 240px;
+}
+.step-txt1::before {
+    content: '';
+    position: absolute;
+    background: url(../images/arrow-img2.png);
+    width: 35%;
+    height: 28px;
+    background-repeat: no-repeat;
+    top: 40%;
+    left: 68%;
+    }
+.step-txt2::before {
+    content: '';
+    position: absolute;
+    background: url(../images/arrow-img1.png);
+    width: 35%;
+    height: 28px;
+    background-repeat: no-repeat;
+    top: 44%;
+    left: 70%;
+    }
+.simple.Steps h3 {
+    font-size: 22px;
+    color: #000;
+    text-align: -webkit-center;
+    padding-top: 20px;
+    text-transform: uppercase;
+    opacity: 80%;
+    font-family: 'GT Walsheim-pro-bold';
+}
+section.feature-sec {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.school-title {
+    display: flex;
+}
+
+.schl-head {
+    margin-left: 20px;
+}
+
+.schl-head h3 {
+    margin-bottom: 0;
+}
+
+.scool-logo {
+    background-color: #f7f9fb;
+    width: 18%;
+    height: 48px;
+    padding: 6px;
+    border-radius: 7px;
+    text-align: center;
+}
+.dummy-txt h2 {
+    font-size: 26px;
+    color: #000;
+    margin-top: 15px;
+    font-family: 'GT Walsheim-pro-bold';
+}
+
+.dummy-txt h4 {
+    font-size: 18px;
+    color: #000;
+    opacity: 55%;
+    padding-bottom: 25px;
+    font-family: 'GT Walsheim-pro-regular';
+}
+
+.dummy-txt p {
+    font-size: 20px;
+    color: #000;
+    opacity: 55%;
+    font-family: "GTWalsheimProMedium";
+}
+
+.price h3 {
+    color: #000;
+    font-size: 25px;
+    font-family: 'GT Walsheim-pro-bold';
+}
+
+.price span {
+    font-family: GTWalsheimPro-Medium;
+    font-size: 14px;
+    color: #9f9f9f;
+}
+
+.apply a {
+    color: #004789;
+    background-color: #f7f9fb;
+    font-size: 17px;
+    padding: 20px 35px;
+    border-radius: 47px;
+    font-family: 'GT Walsheim-pro-bold';
+}
+
+.price-area {
+    display: flex;
+    margin-top: 40px;
+}
+
+.apply {
+    margin-left: 20px;
+}
+
+.feature-details:hover {
+    box-shadow: 0 0 20px #0000001c;
+}
+
+.feature-details {
+    border: 1px solid #0000001c;
+    border-radius: 20px;
+    padding: 25px;
+}
+
+.private-schools .row {
+    margin-bottom: 30px;
+}
+.apply a:hover {
+    background-color: #004789;
+    color: #fff;
+}
+.find-job a {
+    font-size: 18px;
+    color: #fff;
+    background-color: #018cb3;
+    padding: 20px 40px;
+    text-transform: uppercase;
+    border-radius: 30px;
+    letter-spacing: 1px;
+    font-family: 'GT Walsheim-pro-bold';
+}
+
+.find-job {
+    text-align: center;
+    margin-top: 80px;
+}
+section.get-matched {
+    background: url(../images/bg-img.jpg);
+    width: 100%;
+    background-size: 100%;
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+.get-title h2::before {
+    content: '';
+    background: url(../images/human-img.png);
+    position: absolute;
+    width: 40%;
+    height: 520px;
+    background-repeat: no-repeat;
+    top: -116px;
+    left: -396px;
+   }
+
+.get-title h2 {
+    position: relative;
+}
+.get-title h2 {
+    font-size: 50px;
+    color: #fff;
+    font-family: "GT Walsheim-pro-bold";
+}
+.get-title p {
+    color: #fff;
+    font-size: 18px;
+    width: 70%;
+    opacity: 85%;
+    margin-top: 40px;
+    font-family: "GT Walsheim-pro-regular";
+}
+.upload-btn a {
+    color: #004789;
+    font-size: 18px;
+    text-transform: uppercase;
+    background-color: #fff;
+    padding: 20px 39px;
+    letter-spacing: 1px;
+    border-radius: 40px;
+    font-family: "GT Walsheim-pro-bold";
+}
+.upload-btn {
+    margin-top: 50px;
+}
+footer {
+    padding-top: 100px;
+}
+
+.ftr-area h4 {
+    font-family: GTWalsheimPro-Regular;
+    font-size: 17px;
+    color: #000;
+    opacity: 60%;
+    margin-top: 20px;
+    line-height: 30px;
+}
+
+.social-icon ul {
+    display: flex;
+}
+
+.social-icon li {
+    list-style: none;
+    margin: 10px;
+}
+
+.social-icon i {
+    color: #4c4a4b;
+    background-color: #efefef;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    padding: 11px;
+}
+
+.social-icon i:hover {
+    color: #fff;
+    background-color: #004789;
+    transition: 0.5s all;
+}
+
+.ftr-area h3 {
+    font-family: GTWalsheimPro-Bold;
+    font-size: 20px;
+    opacity: 85%;
+    color: #000;
+    margin-bottom: 48px;
+    position: relative;
+}
+
+.ftr-area li {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.ftr-list a {
+    font-family: GTWalsheimPro-Regular;
+    color: #000;
+    font-size: 18px;
+    opacity: 60%;
+}
+
+.ftr-area h3::before {
+    content: '';
+    position: absolute;
+    border: 2px solid #018cb3;
+    width: 31%;
+    top: 40px;
+}
+.ftr-area p {
+    font-family: GTWalsheimPro-Regular;
+    color: #000;
+    font-size: 16px;
+    opacity: 60%;
+    line-height: 30px;
+}
+
+form.new-letter {
+    position: relative;
+}
+
+form.new-letter i.fa.fa-envelope-open {
+    position: absolute;
+    left: 15px;
+    top: 18px;
+    bottom: 0;
+    color: #7f7f7f;
+}
+
+form.new-letter input {
+    padding: 15px;
+    width: 90%;
+    border-radius: 50px;
+    border: 1px solid #0000000f;
+    box-shadow: 0 0 20px #00000012;
+}
+.search-form input {
+    width: 40%;
+    height: 89px;
+    border: none;
+    font-family: GTWalsheimPro-Regular;
+    font-size: 22px;
+    color: #000;
+    letter-spacing: 1px;
+    opacity: 80%;
+}
+
+.navbar-nav {
+    display: flex;
+    align-items: center;
+}
+
+a.nav-item.nav-link {
+    padding: 0 14px !important;
+    color: #464646 !important;
+}
+
+.search-form {
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    margin-top: 100px;
+}
+.find-job a:hover {
+    color: #018cb3;
+    background-color: #fff;
+    border: 1px solid #018cb3;
+}
+
+.upload-btn i {
+    margin-right: 10px;
+}
+.upload-btn a::after {
+    content: '';
+    background: url(../images/rocket-img.png);
+    position: absolute;
+    width: 13%;
+    height: 127px;
+    background-repeat: no-repeat;
+    right: 0;
+}
+
+.upload-btn{
+    position: relative;
+}
+
+.upload-btn a:hover {
+    color: #fff;
+    background-color: #004789;
+}
+.term-condition ul {
+    display: flex;
+}
+
+.term-condition li {
+    list-style: none;
+    margin-right: 10px;
+}
+
+.term-condition a {
+    font-family: GTWalsheimPro-Regular;
+    font-size: 16px;
+    color: #000;
+    opacity: 90%;
+}
+.country-opt {
+    margin-bottom: 12px;
+}
+
+.copy-right p {
+    font-family: GTWalsheimPro-Regular;
+    font-size: 16px;
+    color: #404040;
+    opacity: 90%;
+}
+
+.copy-right a {
+    font-family: GTWalsheimPro-Bold;
+    color: #018cb3;
+}
+
+.term-condition {
+    float: right;
+}
+
+.copyright-sec {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: 1px solid #00000026;
+}
+
+.ftr-area {
+    padding-bottom: 60px;
+}
+form.new-letter input {
+    padding-left: 45px;
+    font-family: GTWalsheimPro-Regular;
+    font-size: 15px;
+}
+
+form.new-letter button {
+    background-color: #004789;
+    border: none;
+    width: 40px;
+    color: #fff;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    position: absolute;
+    right: 44px;
+    top: 7px;
+}
+
+/*CAREER ADVICE PAGE START*/
+
+.career-heading h2 {
+    text-transform: uppercase;
+    font-size: 50px;
+    color: #000;
+    text-align: center;
+    font-family: "GT Walsheim-pro-bold";
+}
+
+.career-heading h2 span {
+    color: #018cb3;
+}
+.post-img img {
+    width: 100%;
+}
+
+.post-title p {
+    font-size: 16px;
+    color: #000;
+    opacity: 44%;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-family: "GT Walsheim-pro-regular";
+}
+
+.post-title h3 {
+    font-size: 20px;
+    line-height: 30px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    font-family: 'GT Walsheim-pro-bold';
+}
+
+.post-title a {
+    color: #018cb3;
+    text-transform: uppercase;
+    font-size: 15px;
+    letter-spacing: 1px;
+    background-color: #f2f9fb;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-family: "GTWalsheimProMedium";
+}
+
+.post-sec {
+    box-shadow: 0 0 20px #00000024;
+    border-radius: 28px;
+}
+
+.post-title {
+    padding: 20px;
+    padding-bottom: 40px;
+}
+section.career-advice .row {
+    margin-bottom: 40px;
+}
+.pagination {
+    justify-content: center;
+    position: relative;
+}
+.pagination a {
+  color: #878888;
+  float: left;
+  padding: 8px 16px;
+  font-family: GTWalsheimPro-Regular;
+  font-size: 18px;
+  border: 1px solid #878888;
+  margin: 5px;
+}
+
+.pagination a.active {
+  color: #018cb3;
+  border: 1px solid #018cb3;
+}
+
+.pagination a:hover:not(.active) {
+  background-color: #ddd;
+  }
+.pagination::before {
+    content: '';
+    position: absolute;
+    border: 1px solid #00000017;
+    width: 20%;
+    top: 25px;
+    left: 90px;
+    }
+
+.pagination::after {
+    content: '';
+    position: absolute;
+    border: 1px solid #00000017;
+    width: 20%;
+    top: 25px;
+    right: 90px;
+    }
+
+section.career-advice {
+    background-color: #fafbfd;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+/*CAREER ADVICE PAGE END*/
+
+/*NEW DETAIL PAGE START*/
+
+.article-blk img {
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.article-blk p {
+    font-size: 17px;
+    color: #000;
+    opacity: 55%;
+    line-height: 33px;
+    font-family: 'GT Walsheim-pro-regular';
+}
+
+.article-blk h2 {
+    color: #000;
+    text-transform: uppercase;
+    font-size: 35px;
+    margin: 30px 0 30px 0;
+    font-family: 'GT Walsheim-pro-bold';
+}
+
+.posts-headings h3 {
+    font-family: 'GT Walsheim-pro-bold';
+    color: #000;
+    text-transform: uppercase;
+    font-size: 19px;
+    letter-spacing: 1px;
+    position: relative;
+}
+
+form.post-form {
+    padding-top: 30px;
+    position: relative;
+}
+
+form.post-form input {
+    border: none;
+    padding: 20px;
+    background-color: #f7fbfd;
+    width: 100%;
+    font-family: GTWalsheimPro-Light;
+    font-size: 16px;
+}
+
+form.post-form button {
+    border: none;
+    background-color: transparent;
+}
+
+form.post-form button {
+    position: absolute;
+    top: 45px;
+    right: 9px;
+}
+
+.search-section {
+    border: 1px solid #00000021;
+    border-top: 3px solid #018cb3;
+}
+
+.popular-posts {
+    margin-top: 30px;
+    border: 1px solid #00000021;
+    border-top: 3px solid #018cb3;
+}
+
+.blk-area {
+    padding: 20px;
+}
+.posts-headings h2 {
+    font-family: 'GT Walsheim-pro-bold';
+    color: #000;
+    text-transform: uppercase;
+    font-size: 19px;
+    letter-spacing: 1px;
+    padding: 20px;
+    position: relative;
+}
+.blog-txt h3 {
+    font-family: 'GT Walsheim-pro-bold';
+    color: #000;
+    font-size: 16px;
+}
+
+.blog-txt h4 {
+    font-family: 'GTWalsheimProMedium';
+    font-size: 13px;
+    color: #018cb3;
+    }
+
+.blog-blk {
+    display: flex;
+    border-bottom: 1px solid #00000021;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+.blog-txt {
+    padding-left: 20px;
+}
+
+section.article-sec {
+    padding-bottom: 100px;
+    background-color: #fafbfd;
+}
+.social-connect {
+    border: 1px solid #00000021;
+    border-top: 3px solid #018cb3;
+    margin-top: 30px;
+    padding: 30px;
+}
+section.related-news {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+section.related-news h2 {
+    margin-bottom: 50px;
+}
+.posts-headings h3::before {
+    position: absolute;
+    content: '';
+    border: 1px solid #018cb3;
+    width: 50px;
+    top: 30px;
+}
+
+.posts-headings h2::before {
+    position: absolute;
+    content: '';
+    border: 1px solid #018cb3;
+    width: 50px;
+    top: 50px;
+}
+
+.posts-headings img {
+    width: 100%;
+    margin-top: 20px;
+}
+
+
+a.navbar-brand img {
+    width: 100%;
+}
+
+.login-side {
+    display: flex;
+    border-left: 1px solid #00000030;
+    align-items: center;
+}
+
+.navbar-nav a {
+    color: #464646;
+    font-family: GTWalsheimPro-Medium;
+    font-size: 17px;
+}
+
+a.nav-item.nav-link.reg-btn {
+    background-color: #018cb3;
+    color: #fff !important;
+    text-transform: uppercase !important;
+    font-size: 18px !important;
+    padding: 15px 17px !important;
+    border-radius: 30px !important;
+    font-family: 'GT Walsheim-pro-bold' !important;
+}
+
+.login-side a.nav-item.login-btn {font-family: GTWalsheimPro-Bold;color: #000 !important;text-transform: uppercase;font-size: 17px;}
+
+.login-side i {
+    margin-right: 5px;
+    font-size: 18px;
+    color: #018cb3;
+}
+
+.navbar-nav a {
+    font-family: GTWalsheimPro-Medium;
+    font-size: 17px;
+    color: #464646;
+    text-transform: uppercase;
+}
+
+.bottom-row {
+    padding-top: 30px;
+}
+
+
+.tab {
+  overflow: hidden;
+  text-align: center;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 13px 0px;
+  transition: 0.3s;
+  border-radius: 100%;
+  min-width: 53px;
+  font-size: 18px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #004688;
+  color: #fff;
+}
+
+/* Style the tab content */
+.tabcontent {
+  animation: fadeEffect 1s; /* Fading effect takes 1 second */
+}
+
+/* Go from zero to full opacity */
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+.industry-title {
+    text-align: center;
+}
+
+.industry-title h4 {
+    font-size: 50px;
+    text-transform: uppercase;
+    font-family: "GT Walsheim-pro-bold";
+}
+
+.industry-title h4 span {
+    color: #018cb3;
+}
+
+.industry-small h4 {
+    font-size: 35px;
+    color: #018cb3;
+    font-family: "GTWalsheimProMedium";
+    padding-bottom: 10px;
+}
+
+.industry-small h4 span {
+    color: #ff0000;
+    font-size: 21px;
+    position: relative;
+    top: -12px;
+    right: 8px;
+}
+
+.industry-form input {
+    width: 50%;
+    display: block;
+    border: 1px solid #cecece;
+    border-radius: 25px;
+    padding: 10px 10px;
+    margin-bottom: 30px;
+}
+
+.industry-btn a {
+    text-align: center;
+    display: inline-block;
+    background-color: #018cb3;
+    color: #fff;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 18px 0;
+    border-radius: 45px;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.industry-small {
+    padding-top: 40px;
+}
+
+.industry-noti h4 {
+    font-size: 35px;
+    color: #000;
+}
+
+.industry-noti a {
+    display: inline-block;
+    font-size: 30px;
+    color: #444444;
+}
+
+.industry-button {
+    float: right;
+    display: flex;
+    align-items: center;
+}
+
+a.cancel-industry {display: inline-block;color: #9d9d9d;text-transform: uppercase;font-family: "GT Walsheim-pro-bold";font-size: 30px;}
+
+.industry-button a {
+}
+
+a.continue-industry {
+    display: inline-block;
+    text-transform: uppercase;
+    background-color: #018cb3;
+    color: #fff;
+    padding: 9px 25px 2px;
+    border-radius: 35px;
+    font-family: "GT Walsheim-pro-bold";
+    margin-left: 20px;
+    font-size: 30px;
+}
+.industry-basic {
+    width: 68%;
+    margin: 0 auto;
+}
+
+section.industry-sec {
+    padding: 90px 0 60px;
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+.hiring-accord .accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  border-radius: 20px 20px 0px 0px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.hiring-accord .active, .hiring-accord .accordion:hover {
+  background-color: #018cb3;
+  color: #fff;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.hiring-accord .panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.hiring-accord .accordion:after {
+  content: '\f107'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #fff;
+  float: right;
+  font-family: FontAwesome;
+  margin-left: 5px;
+}
+
+.hiring-accord .active:after {
+  content: "\f106"; /* Unicode character for "minus" sign (-) */
+  font-family: FontAwesome;
+}
+.industry-hiring {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    color: #fff;
+    background-color: #2d2d2d;
+    padding: 16px 20px;
+    position: relative;
+}
+
+.industry-hiring::before {content: '';position: absolute;background-color: #2d2d2d;width: 25px;height: 25px;transform: rotate(45deg);top: auto;bottom: -12px;left: 80px;}
+
+.hiring-para h4 {
+    font-family: "GT Walsheim-pro-bold";
+    font-size: 22px;
+    margin: 0;
+}
+
+.hiring-para {
+    padding-left: 20px;
+}
+
+.hiring-para p {
+    font-size: 16px;
+    font-family: "GT Walsheim-pro-regular";
+    color: #fff;
+}
+.hiring-form input {
+    width: 100%;
+    padding: 9px 10px;
+    border-radius: 35px;
+    outline: none;
+    border: 1px solid #cecece;
+}
+
+.hiring-form select {
+    border: 1px solid #cecece;
+    width: 100%;
+    padding: 10px 7px;
+    border-radius: 35px;
+    margin-top: 20px;
+}
+
+.hiring-exact {
+    padding-top: 40px;
+}
+
+.hiring-exact h4 {
+    font-size: 20px;
+    color: #018cb3;
+    text-decoration: underline;
+}
+.hiring-accord h4 {
+    font-size: 18px;
+    color: #939393;
+    font-family: "GT Walsheim-pro-regular";
+    padding-top: 10px;
+}
+.hiring-pneal {
+    border: 1px solid #cecece;
+    border-radius: 20px 20px 0px 0px;
+    margin-bottom: 30px;
+}
+.hiring-form {
+    width: 70%;
+}
+
+.hiring-accord {
+    width: 70%;
+}
+.hiring-pneal h3 {
+    font-size: 22px;
+    color: #666666;
+    font-family: "GTWalsheimProMedium";
+    padding-top: 30px;
+}
+.describe-job {
+    text-align: center;
+}
+
+.describe-job h4 {
+    font-size: 50px;
+    color: #000;
+    text-transform: uppercase;
+    font-family: "GT Walsheim-pro-bold";
+}
+
+.describe-job h4 span {
+    color: #018cb3;
+}
+
+.describe-job p {
+    text-align: left;
+    font-size: 17px;
+    color: #000;
+    font-family: "GT Walsheim-pro-regular";
+    width: 90%;
+}
+
+.describe-teach {
+    text-align: center;
+}
+
+.describe-teach h4 {
+    font-size: 40px;
+    text-transform: uppercase;
+    color: #018cb3;
+    font-family: "GT Walsheim-pro-bold";
+}
+
+.describe-teach a {
+    font-family: "GTWalsheimProMedium";
+    font-size: 22px;
+    color: #000;
+    display: inline-block;
+}
+
+.teach-describe p {
+    color: #666666;
+    font-size: 22px;
+    font-family: 'GTWalsheimProMedium';
+}
+
+.teach-describe a {
+    display: inline-block;
+    border: 1px solid #018cb3;
+    text-transform: uppercase;
+    color: #018cb3;
+    padding: 10px 30px;
+    border-radius: 35px;
+    margin-bottom: 20px;
+    font-family: "GTWalsheimProMedium";
+}
+section.describe-sec {
+    padding: 60px 0 60px;
+}
+
+
+.finalize-accord .accordion {
+  background-color: transparent;
+  color: #018cb3;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.finalize-accord.active, .finalize-accord.accordion:hover {
+  background-color: #ccc;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.finalize-accord .panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+.finalize-accord .accordion:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #018cb3;
+  float: right;
+  margin-left: 5px;
+  background-color: #018cb3;
+  padding: 7px 10px;
+  border-radius: 100%;
+}
+
+.finalize-accord .active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+
+
+.finalize-title {
+    text-align: center;
+}
+
+.finalize-title h4 {
+    font-size: 50px;
+    font-family: "GT Walsheim-pro-bold";
+    color: #000;
+    text-transform: uppercase;
+}
+
+.finalize-title h4 span {
+    color: #018cb3;
+}
+
+.finalize-title p {
+    font-size: 17px;
+    color: #000;
+    font-family: "GT Walsheim-pro-regular";
+    width: 74%;
+    display: inline-block;
+}
+
+.company-image {
+    padding-top: 60px;
+    width: 70%;
+}
+
+.company-image img {
+    width: 100%;
+}
+
+.finalize-location {
+    padding-top: 50px;
+    width: 46%;
+}
+
+.finalize-location h4 {
+    font-size: 35px;
+    color: #018cb3;
+    font-family: "GTWalsheimProMedium";
+}
+
+.finalize-edit h3 {
+    font-size: 28px;
+    color: #5b5b5b;
+    font-family: 'GTWalsheimProMedium';
+}
+
+.finalize-edit h3 i {
+    float: right;
+    color: #018cb3;
+}
+
+.finalize-edit a {
+    display: block;
+    font-family: 'GT Walsheim-pro-regular';
+    font-size: 28px;
+    color: #5b5b5b;
+}
+
+.finalize-edit a i {
+    float: right;
+    color: #018cb3;
+}
+
+.finalize-edit {
+    padding: 30px 10px;
+}
+
+.finalize-over-head h4 {
+    font-family: 'GTWalsheimProMedium';
+    font-size: 35px;
+    color: #018cb3;
+}
+
+.finalize-over-head h4 i {
+    float: right;
+}
+
+.finalize-over-head {
+    width: 93%;
+}
+
+.finalize-over-head p {
+    font-size: 17px;
+    color: #000;
+    font-family: 'GT Walsheim-pro-regular';
+    width: 92%;
+}
+
+.finalize-video {
+    padding-top: 50px;
+}
+
+.finalize-video img {
+    width: 100%;
+}
+
+.boost-img {
+    padding-top: 50px;
+}
+
+.boost-img img {
+    width: 100%;
+}
+
+.finalize-accord {
+    padding-bottom: 100px;
+}
+
+.finalize-view h4 {
+    font-size: 35px;
+    font-family: 'GTWalsheimProMedium';
+    color: #018cb3;
+}
+
+.finalize-detail h4 {
+    color: #018cb3;
+    font-size: 35px;
+    font-family: 'GTWalsheimProMedium';
+}
+
+.finalize-detail {
+    padding-top: 40px;
+}
+
+section.finalize-sec {
+    padding: 60px 0 60px;
+}
+
+
+/*footer start*/
+.ftr-info p {
+    font-size: 17px;
+    color: #666666;
+    font-family: "GT Walsheim-pro-regular";
+}
+footer ul li {
+    list-style: none;
+    line-height: 35px;
+}
+
+footer ul li a {
+    font-size: 18px;
+}
+footer ul li a {
+    font-size: 18px;
+    font-family: "GTWalsheimPro-regular";
+    color: #707070;
+}
+
+.subscribe-info p {
+    font-size: 16px;
+    font-family: "GTWalsheimPro-regular";
+}
+.row.rw-h {
+    float: right;
+    width: 100%;
+}
+.plain {}
+
+.user-form input {
+    position: relative;
+    padding: 8px 25px;
+    width: 75%;
+    border-radius: 31px;
+    border: 1px solid #f0f0f0;
+}
+
+.plain {
+    position: absolute;
+    /* top: 0; */
+    bottom: 0;
+    left: 32%;
+    right: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.user-form i.fa.fa-envelope {
+    position: absolute;
+    /* top: 0; */
+    bottom: 15px;
+    left: 25px;
+    right: 0;
+    z-index: 1;
+    color: #7f7f7f;
+}
+
+.user-form input::placeholder {
+    padding: 0px 13px;
+    color: #7f7f7f;
+    font-size: 15px;
+    font-family: "GTWalsheimPro-regular"
+}
+
+.plain i {
+    border: 1px solid #004789;
+    background: #004789;
+    padding: 10px 11px;
+    border-radius: 20px;
+    display: flex;
+}
+
+.plain i {
+    color: #fff;
+}
+footer h4 {
+    position: relative;
+}
+
+footer h4::before {content: "";position: absolute;top: 37px;/* bottom: 0; */left: 0;right: 0;border-bottom: 2px solid #018cb3;width: 59px;}
+
+footer ul {
+    padding-top: 28px;
+}
+
+.ftr-info {
+    padding: 19px 0px;
+}
+.sletter-main {
+    padding-top: 28px;
+}
+.social-icons i {
+    border: 1px solid #efefef;
+    background: #efefef;
+    padding: 6px 10px;
+    border-radius: 27px;
+    margin: 0px 3px;
+    color: #4c4a4b;
+}
+
+.social-icons i.fa.fa-google-plus {
+    padding: 7px 7px;
+}
+
+.social-icons i:hover {
+    background: #004789;
+    color: #fff;
+}
+.footer-inner ul li {
+    line-height: normal;
+}
+
+.footer-inner ul {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    display: flex;
+    justify-content: end;
+    margin: 0 auto;
+    width: 80%;
+}
+.ftrinr-info p {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: "GTWalsheimPro-regular";
+}
+
+.footer-inner .row {
+    display: flex;
+    align-items: center;
+}
+
+.ftrinr-info p span {
+    color: #018cb3;
+    border-bottom: 1px solid #018cb3;
+    font-family: "GTWalsheimPro-bold";
+}
+
+.footer-inner ul li a {
+    font-size: 16px;
+    font-family: "GTWalsheimPro-regular";
+}
+
+.footer-inner .row {border-top: 2px solid #e5e5e5;padding-top: 15px;}
+
+.footer-inner {
+    padding: 40px 0px 0px;
+}
+.footer-inner ul li a {
+    color: #191919;
+    padding: 0px 5px;
+}
+/*footer end*/
+
+
+.nav-main {
+    display: flex;
+    align-items: center;
+}
+/*top row start*/
+
+.login-infoo {
+    position: absolute;
+    top: 37px;
+    bottom: 0;
+    left: 22px;
+    right: 0;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.login-infoo h4 span {
+    color: #018cb3;
+}
+.login-infoo h4 {
+    font-size: 75px;
+    font-family: "GTWalsheimPro-bold";
+}
+a.register {
+    border: 1px solid #018cb3;
+    background: #018cb3;
+    padding: 10px 18px;
+    border-radius: 20px;
+    color: #fff;
+}
+
+.login-section {
+    margin: 0 auto;
+}
+
+.top-row .row {
+    display: flex;
+    align-items: center;
+}
+
+.login-section a {
+    margin: 0px 15px;
+}
+.logo img {
+    width: 100%;
+}
+div#navbarCollapse a {
+    padding: 0px 13px;
+    font-size: 16px;
+    color: #464646;
+    font-family: 'GT Walsheim-pro-regular';
+}
+a.login {
+    font-size: 17px;
+    font-family: "GTWalsheimPro-bold";
+    color: #000000;
+    position: relative;
+}
+
+a.login::before {content: "";position: absolute;top: 20px;bottom: 0;left: 27px;right: 0;border-bottom: 1px solid #000;width: 55px;}
+
+.background-img {
+    position: relative;
+}
+
+.top-row {
+    position: absolute;
+    top: 20px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.background-img img {
+    width: 100%;
+}
+
+header {
+    position: absolute;
+    z-index: 999;
+    width: 100%;
+}
+
+/*login section start*/
+section.login-sec {
+    background: #fafbfd;
+    padding: 100px 0px 100px;
+}
+.user-login form input {
+    width: 80%;
+    border: 1px solid #cecece;
+    padding: 12px 83px;
+    border-radius: 30px;
+    position: relative;
+    outline: none !important;
+    margin-bottom: 24px;
+}
+
+.user-login i.fa.fa-user {
+    border: 1px solid #858585;
+    background: #858585;
+    padding: 4px 6px;
+    border-radius: 17px;
+    position: absolute;
+    top: 13px;
+    /* bottom: 0; */
+    left: 12%;
+    /* right: 0; */
+    z-index: 1;
+    color: #ffffff;
+}
+.user-input {
+    position: relative;
+}
+
+.user-input::before {content: "";position: absolute;top: 12px;bottom: 0;left: 16%;/* right: 0; */border-right: 2px solid #c7c7c7;height: 28px;z-index: 1;}
+.user-login i.fa.fa-unlock-alt {
+    position: absolute;
+    top: 20px;
+    left: 13%;
+    z-index: 1;
+    color: #858585;
+}
+.user-login {
+    text-align: center;
+    background: #fefeff;
+    width: 80%;
+    margin: 0 auto;
+    padding: 0px 0px 100px;
+}
+.forget-pass {
+    position: absolute;
+    top: 7px;
+    bottom: 0;
+    left: auto;
+    right: 110px;
+    display: flex;
+    justify-content: center;
+}
+
+.user-login form {
+    position: relative;
+}
+.user-login form button {
+    width: 80%;
+    padding: 10px 0px;
+    border-radius: 30px;
+    font-size: 18px;
+    font-family: "GTWalsheimPro-bold";
+    outline: none !important;
+}
+
+.cntnue-mail button {
+    border: 1px solid #018cb3;
+    background: #018cb3;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.cntnue-Apple button {
+    border: 1px solid #000000;
+    background: #000000;
+    color: #fff;
+}
+.cntnue-facebook button {
+    border: 1px solid #3b5998;
+    background: #3b5998;
+    color: #fff;
+}
+
+.cntnue-google button {
+    border: 1px solid #404040;
+    background: #fff;
+    color: #3b3b3b;
+}
+.option h5 {
+    font-size: 18px;
+    font-family: "GTWalsheimPro-bold";
+    color: #4c4c4c;
+    position: relative;
+}
+
+.option {margin: 0 auto;width: 21%;padding: 20px 0px 20px;}
+
+.option h5::before {content: "";position: absolute;top: auto;bottom: 52px;left: 44%;right: 0;border-right: 1px solid #4c4c4c;width: 408px;height: 323px;transform: rotate(90deg);}
+
+.option h5::after {
+ content: "";
+ position: absolute;
+ top: 59px;
+ bottom: auto;
+ left: auto;
+ right: 38%;
+ border-left: 1px
+ solid #4c4c4c;
+ width: 423px;
+ height: 330px;
+ transform: rotate(
+90deg);
+ display: flex;
+ }
+ .cntnue-facebook {
+    margin-bottom: 20px;
+}
+
+.cntnue-Apple {
+    margin-bottom: 20px;
+}
+
+.cntnue-mail {
+    margin-top: 50px;
+}
+.user-maininfo h4 {
+    font-size: 50px;
+    font-family: "GTWalsheimPro-bold";
+    padding-bottom: 23px;
+}
+
+h4 {}
+
+.user-maininfo h4 span {
+    color: #018cb3;
+}
+
+.user-maininfo p {
+    font-size: 23px;
+    font-family: "GTWalsheimPro-regular";
+    color: #646666;
+    padding-bottom: 28px;
+}
+
+.user-maininfo {
+    text-align: center;
+}
+.user-maininfo p span {
+    color: #018cb3;
+    font-family: "GTWalsheimPro-medium";
+    border-bottom: 2px solid #018cb3;
+}
+.user-login form button i {
+    padding-right: 10px;
+}
+.forget-pass a {
+    color: #7f7f7f;
+    font-size: 18px;
+    font-family: "GTWalsheimPro-regular";
+    position: relative;
+}
+
+.forget-pass a::before {
+ content: "";
+ position: absolute;
+ top: 24px;
+ bottom: 0;
+ left: 0;
+ right: 0;
+ border-bottom: 1px
+ solid #7f7f7f;
+ }
+/*login sec end*/
+/*resume-after sec start*/
+.drop-zone {
+  margin: 0 auto;
+  width: 79%;
+  height: 54px;
+  display: flex;
+  align-items: center;
+  /* font-family: "Quicksand", sans-serif; */
+  font-weight: 500;
+  font-size: 20px;
+  cursor: pointer;
+  border: 1px solid #f4f4f5;
+  background: #f4f4f5;
+  border-radius: 5px;
+  position: relative;
+}
+
+.drop-zone--over {
+  border-style: solid;
+}
+
+.drop-zone__input {
+  display: none;
+}
+
+.drop-zone__thumb {
+  width: 38%;
+  height: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #cccccc;
+  background-size: cover;
+  position: relative;
+}
+
+.drop-zone__thumb::after {
+  content: attr(data-label);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 5px 0;
+  color: #ffffff;
+  background: rgba(0, 0, 0, 0.75);
+  font-size: 14px;
+  text-align: center;
+}
+.drop-zone span {
+    font-size: 18px;
+    font-family: "GTWalsheimPro-regular";
+    color: #3d3d3d;
+    padding: 0px 40px;
+}
+.file-image {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    /* left: 0; */
+    right: 18px;
+}
+
+.file-image img {
+    width: 100%;
+}
+
+.google {
+    position: relative;
+}
+
+.google-img {
+    position: absolute;
+    top: 11px;
+    bottom: 0;
+    left: 0;
+    right: 34%;
+}
+.upload-device button {
+    border: 1px solid #018cb3;
+    background: #fff;
+    color: #018cb3;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+
+.google button {
+    border: 1px solid #404040;
+    color: #3b3b3b;
+    background: #fff;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.dropbox button {
+    border: 1px solid #0162ff;
+    background: #0162ff;
+    color: #fff;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.microsoft-drive button {
+    border: 1px solid #074ab2;
+    background: #074ab2;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.supppot-file p {
+    font-size: 18px;
+    font-family: "GTWalsheimPro-regular";
+    color: #575757;
+    padding: 35px 0px 0px;
+}
+/*resume-after sec end*/
+
+/*edit job post css start*/
+
+section.edit-job-sec {
+    background-color: #f3f2f1;
+}
+
+.heading-edit-job {
+    background-color: #fff;
+    width: 60%;
+    margin: 0px auto;
+    border-radius: 15px;
+}
+
+.white-back {
+    background-color: #fff;
+    border-radius: 15px;
+}
+
+.row-1 {
+    background-color: #fff;
+    width: 60%;
+    margin: 20px auto;
+    border-radius: 15px;
+}
+
+.cancel-preview-confirm-blk {
+    background-color: #fff;
+    width: 60%;
+    margin: 0 auto;
+    border-radius: 15px;
+    padding: 30px;
+}
+
+
+#more {
+    display: none;
+}
+
+button#myBtn {
+    text-align: center;
+    margin: 10px auto;
+    display: flex;
+    border: 0;
+    background: transparent;
+    color: #2557a7;
+    font-size: 14px;
+    font-weight: 600;
+    outline: none;
+    cursor: pointer;
+}
+
+.supplement-pay-blk {
+    display: flex;
+    align-items: baseline;
+    width: 100%;
+    background-color: #f3f2f1;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.supp-icn a i {
+    color: gray;
+}
+
+
+
+.supp-icn {
+    width: 4%;
+    display: flex;
+}
+
+.supp-txt {
+    width: 83%;
+}
+
+.map iframe {
+    width: 100%;
+    height: 250px;
+    border-radius: 10px;
+}
+
+.setting-blk {
+    display: flex;
+    padding: 30px;
+    border-bottom: 1px solid #e9e7e6;
+}
+
+.setting-txt {
+    width: 100%;
+}
+
+.row.white-back {
+    width: 60%;
+    margin: 20px auto;
+}
+
+.hding-job {
+    padding: 0px 20px;
+}
+
+.hding-job-img img {
+    width: 60%;
+}
+
+.hding-job-img {
+    text-align: center;
+}
+
+.heading-edit-job .row {
+    display: flex;
+    align-items: center;
+}
+
+.hding-job h4 {
+    font-size: 22px;
+    text-transform: capitalize;
+    font-weight: 600;
+    margin: 0;
+    color: #2f2f2f;
+}
+
+.lead-year-blk {
+    padding: 30px 30px;
+}
+
+.lead-year-blk ul li h4 {
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin: 0;
+    padding-bottom: 17px;
+    -webkit-text-stroke-width: thin;
+    color: #343434;
+}
+
+.lead-year-blk ul li h4 {
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin: 0;
+    -webkit-text-stroke-width: thin;
+    color: #343434;
+    padding: 10px 7px;
+}
+
+.setting-txt h4{
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin: 0;
+    padding-bottom: 17px;
+    -webkit-text-stroke-width: thin;
+    color: #343434;
+}
+
+.lead-year-blk ul li p {
+    color: #474747;
+    font-size: 12px;
+    text-transform: capitalize;
+    margin: 0;
+}
+
+.app-setting-blk {
+    padding: 30px;
+}
+
+.app-setting-blk h4{
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin: 0;
+    padding-bottom: 17px;
+    -webkit-text-stroke-width: thin;
+    color: #343434;
+}
+
+.app-setting-blk ul li h5 {
+    font-size: 13px;
+    -webkit-text-stroke-width: thin;
+    text-transform: capitalize;
+    color: #343434;
+}
+
+
+
+.setting-txt p {
+    color: #474747;
+    font-size: 12px;
+    text-transform: capitalize;
+    margin: 0;
+}
+
+.job-detail-blk ul li h5 {
+    font-size: 13px;
+    -webkit-text-stroke-width: thin;
+    text-transform: capitalize;
+    color: #343434;
+}
+
+.lead-year-blk ul li h5 i {
+    margin: 0px 0px 0px 10px;
+    font-size: 13px;
+    color: #2557a7;
+}
+
+.lead-year-blk ul li h4 i {
+    margin: 0px 0px 0px 10px;
+    font-size: 13px;
+    color: #2557a7;
+}
+
+.photos-blk h4 a i {
+    color: #2d2d2d !important;
+}
+
+
+.lead-year-blk ul li p i {
+    margin: 0px 0px 0px 10px;
+    font-size: 13px;
+    color: #2557a7;
+}
+
+.app-setting-blk ul li h5 i {
+    margin: 0px 0px 0px 10px;
+    font-size: 13px;
+    color: #2557a7;
+}
+
+.app-setting-blk ul li p i {
+    margin: 0px 0px 0px 10px;
+    font-size: 15px;
+    color: #2557a7;
+}
+
+
+
+.job-detail-blk ul li{
+    color: #474747;
+    font-size: 12px;
+    text-transform: capitalize;
+}
+
+.job-setting-blk ul li{
+    color: #474747;
+    font-size: 12px;
+    text-transform: capitalize;
+}
+
+.job-setting-blk ul li h5 i {
+    margin: 0px 0px 0px 10px;
+    font-size: 13px;
+    color: #2557a7;
+}
+
+.job-setting-blk ul li p i {
+    margin: 0px 0px 0px 10px;
+    font-size: 15px;
+    color: #2557a7;
+}
+
+.job-setting-blk ul li h5 {
+    font-size: 13px;
+    -webkit-text-stroke-width: thin;
+    text-transform: capitalize;
+    color: #343434;
+}
+
+
+
+.app-setting-blk ul li{
+    color: #474747;
+    font-size: 12px;
+    text-transform: capitalize;
+}
+
+.add-blk {
+    position: relative;
+    top: 15px;
+}
+
+.add-blk a {
+    color: #2f5eab;
+    font-size: 18px;
+}
+
+.add-blk a i {
+    margin: 0px 5px 0px 0px;
+}
+
+.map {
+    border: 1px solid #d2d1d0;
+    border-radius: 10px;
+}
+
+.map-txt {
+    margin-top: -3px;
+    border-top: 1px solid #d2d1d0;
+}
+
+
+.map p {
+    padding: 5px 10px;
+    margin: 0;
+}
+
+li.dot span {
+    font-size: 19px;
+    color: #2d2d2d;
+    position: relative;
+    font-weight: 900;
+}
+
+.job-detail-blk {
+    border-top: 1px solid #e9e7e6;
+    padding: 20px 0px;
+}
+
+ul.brdr {
+    border-bottom: 1px solid #e9e7e6;
+}
+
+.job-setting-blk {
+    padding: 30px;
+}
+
+.show-confirm ul {
+    display: flex;
+}
+
+.show-confirm ul li {
+    margin: 0px 30px 0px 0px;
+}
+.cancel a {
+    color: #2557a7;
+    border: 1px solid #e6e4e3;
+    padding: 6px 25px;
+    text-transform: capitalize;
+    font-size: 15px;
+    -webkit-text-stroke-width: thin;
+    font-weight: 600;
+}
+
+.cancel a i {
+    padding: 0px 10px 0px 0px;
+}
+
+li.preview a {
+    color: #2557a7;
+    font-size: 13px;
+    -webkit-text-stroke-width: thin;
+}
+
+li.confirm a {
+    background-color: #2557a7;
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 14px;
+    padding: 5px 20px;
+    -webkit-text-stroke: thin;
+    font-weight: 400;
+    border-radius: 7px;
+}
+
+.modal-header .close {
+    margin-top: -8px !important;
+    color: #000 !important;
+    opacity: 1 !important;
+}
+
+h4.modal-title {
+    font-size: 16px;
+    text-transform: capitalize;
+    margin: 0;
+    font-weight: 700;
+    color: #000;
+
+}
+
+.modal-body h4 {
+    font-size: 12px;
+    text-transform: capitalize;
+    font-weight: 600;
+    color: #000;
+}
+
+.frm-blk input {
+    width: 100%;
+    border-radius: 6px;
+    outline: none !important;
+    border: 1px solid #d5d5d5;
+    padding: 5px 0px;
+    margin-bottom: 10px;
+}
+
+.frm-blk-2 input {
+    width: 100%;
+    border-radius: 6px;
+    outline: none !important;
+    border: 1px solid #d5d5d5;
+    padding: 5px 0px;
+    margin-bottom: 10px;
+}
+
+.frm-blk-2 p {
+    /*margin: 30px 0px 0px 10px !important;*/
+}
+
+.frm-blk-2 .col-md-4 {
+    padding-right: 0;
+}
+
+.frm-blk-2 .col-md-2 {padding: 0px;margin: 0px 24px;}
+
+.frm-blk textarea {
+    width: 100%;
+    height: 80px;
+    border-radius: 6px;
+    border: 1px solid #d5d5d5;
+    outline: none;
+}
+
+.frm-blk-street input {
+    width: 100%;
+    border-radius: 6px;
+    outline: none !important;
+    border: 1px solid #d5d5d5;
+    padding: 5px 0px;
+    margin-bottom: 10px;
+}
+
+
+
+.warning-blk {
+    display: flex;
+    background: #ffefe7;
+    padding: 10px 10px;
+}
+
+.warning-txt p {
+    font-size: 11px;
+    text-transform: capitalize;
+}
+
+.warning-icn {
+    padding: 0px 10px 0px 0px;
+}
+
+.warning-icn a i {
+    color: #b56400;
+}
+
+.cat-dec-blk p {
+    font-size: 11px;
+    text-transform: capitalize;
+}
+
+.gray input {
+    border: 1px solid #dad8d69c;
+    width: 100%;
+    background-color: #dad8d69c;
+    margin: 2px 0px;
+    padding: 0;
+    outline: none;
+}
+
+.modal-footer .btn-default {
+    color: #174486 !important;
+    background-color: #fff !important;
+    border-color: #ccc !important;
+}
+
+
+.modal-footer .btn-default:hover {
+    background-color: #174282 !important;
+    color: #fff !important;
+
+}
+
+.modal-body h4 span {
+    font-size: 15px;
+    color: #bd6354;
+}
+
+.modal-dialog-1 {
+    max-width: 600px !important;
+
+}
+
+.modal-content-1 {
+    height: 600px !important;
+}
+
+.modal-body h5 {
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.modal-body h5 span {
+    font-weight: 100;
+}
+
+.modal-dialog-2 {
+    max-width: 600px !important;
+}
+.modal-dialog-3 {
+    max-width: 600px !important;
+}
+
+.modal-dialog-5 {
+    max-width: 600px !important;
+}
+
+.modal-dialog-6{
+    max-width: 600px !important;
+}
+
+.modal-dialog-7{
+    max-width: 600px !important;
+}
+
+.modal-content-7 {
+    overflow: scroll;
+    height: 500px;
+}
+.map1 {
+    border: 0 !important;
+    padding-bottom: 20px;
+}
+
+.map1 iframe {
+    height: 150px !important;
+    border: 1px solid #d2d1d0 !important;
+}
+
+
+/*custom radio-btn*/
+
+/* Create a custom radio button */
+.checkmark-radio {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  border: 1px solid #81868b;
+}
+
+.checkmark1 {
+  top: 7px !important;
+}
+
+.container2 h5 {
+    font-weight: 100;
+    font-size: 13px;
+    margin: 10px 0px 5px;
+}
+
+.container2 p {
+    font-weight: 100;
+    font-size: 11px;
+    text-transform: capitalize;
+}
+
+
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark-radio:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container-radio input:checked ~ .checkmark-radio:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container-radio .checkmark-radio:after {
+    top: 4.5px;
+    left: 5px;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: #2557a7;
+}
+.container-radio {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 13px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid #d5d5d5;
+  padding: 6px 35px;
+  border-radius: 6px;
+}
+
+/* Hide the browser's default radio button */
+.container-radio input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/*custom radio-btn*/
+
+#mymodal7 .modal-body p {
+    font-size: 12px;
+    color: #a3a3a3;
+    margin: 5px 0px;
+}
+
+
+
+.warning-txt p {
+    color: #4d4f59;
+}
+
+.frm-blk-2 label {
+    width: 100%;
+    font-size: 13px;
+    margin-bottom: -10px;
+}
+
+.frm-blk-street label {
+    width: 100%;
+    font-size: 13px;
+    margin-bottom: -10px;
+}
+
+.frm-blk-2 select {
+    width: 100%;
+    padding: 7px 9px;
+    margin-bottom: 20px;
+    font-size: 13px;
+    border-radius: 5px;
+    color: gray;
+    outline: none;
+}
+
+.frm-blk-street select {
+    width: 100%;
+    padding: 7px 9px;
+    margin-bottom: 20px;
+    font-size: 13px;
+    border-radius: 5px;
+    color: gray;
+    outline: none;
+}
+
+.modal-dialog-3 {
+    max-width: 600px !important;
+}
+
+.frm-blk-2 label span {
+    color: #c91c03;
+    opacity: 1;
+    font-size: 15px;
+}
+
+.frm-blk-street label span {
+    color: #c91c03;
+    opacity: 1;
+    font-size: 15px;
+}
+
+.container2 {
+    padding: 1px 35px 3px;
+}
+
+.street-img img {
+    width: 100%;
+}
+
+.advertise-job-blk h5 a {
+    color: #000;
+    font-size: 13px;
+    background-color: #fff;
+    border: 1px solid #d5d5d5;
+    border-radius: 50px;
+    font-weight: 100;
+    padding: 4px 10px;
+}
+
+.advertise-job-blk h5 {
+    font-size: 13px;
+}
+
+.adcvertise-feature-blk ul {
+    display: flex;
+    align-items: center;
+}
+
+.adcvertise-feature-blk ul li {
+    padding: 0px 10px 0px 0px;
+}
+
+.adcvertise-feature-blk ul li h5 {
+    font-size: 13px;
+    color: #2557a7;
+}
+
+li.brdr-paid a {
+    color: green;
+    font-size: 10px;
+    border: 1px solid #d5d5d5;
+    padding: 2px 5px;
+    border-radius: 3px;
+    font-weight: 600;
+}
+
+.adcvertise-feature-blk ul li a i {
+    transform: rotate(180deg);
+    font-size: 15px;
+    position: relative;
+    top: 1px;
+}
+
+.street-txt p {
+    font-size: 10px;
+}
+
+.street-txt h5 {
+    font-size: 12px;
+}
+
+.street-img {
+    border: 1px solid #d5d5d5;
+    border-radius: 5px 5px 0px 0px;
+    position: relative;
+    top: 2px;
+}
+
+
+/*text-editor css*/
+
+.modal-dialog-11 .seperator {
+  display: inline;
+  border-left: 1px solid #ddd;
+  height: 30pt;
+}
+
+.modal-dialog-11 .options {
+  width: 100%;
+  height: 29pt;
+  margin-top: 0pt;
+  border-top: 1px solid #ddd;
+  background-color: #e9e8e8;
+  border-radius: 0px 7px 0px 7px !important;
+}
+
+.modal-dialog-11 iframe {
+  border: 0;
+  width: 100%;
+  margin-bottom: 5pt;
+  height: 250pt;
+}
+
+.modal-dialog-11 .modal-body-1 button {
+  margin: 0;
+  padding: 0;
+  height: 28pt;
+  width: 30pt;
+  background-color: #e9e8e8;
+  cursor: pointer;
+  color: #333;
+  border: 0;
+  border-radius: 0px !important;
+}
+.modal-dialog-11 .modal-body-1 button:active {
+  color: #333;
+}
+.modal-dialog-11 select {
+  height: 30pt;
+  -webkit-appearance: none;
+  border: 0;
+  padding-left: 5pt;
+  padding-right: 5pt;
+  outline: none;
+}
+
+.modal-dialog-11 input[type="number"] {
+  height: 30pt;
+  border: 0;
+  padding: 0;
+  padding-left: 5pt;
+  padding-right: 5pt;
+  outline: none;
+}
+
+.modal-dialog-11 .modal-footer .btn-default {
+    color: #174486 !important;
+    background-color: #fff !important;
+    border-color: #ccc !important;
+    border: 1px solid;
+    min-width: 80px;
+    border-radius: 7px !important;
+}
+
+
+.modal-dialog-11 .modal-footer .btn-default:hover {
+    background-color: #174282 !important;
+    color: #fff !important;
+
+}
+
+.modal-editor {
+    border: 1px solid #184486;
+    border-radius: 7px;
+}
+
+.modal-body-1 h4 {
+    margin: 0;
+}
+
+.modal-body-1 p {
+    margin: 3px 0px 6px;
+}
+
+.input-pdf input {
+    opacity: 0;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.input-pdf label {
+    color: #2e5591;
+    position: relative;
+    cursor: pointer;
+    font-size: 13px;
+    margin: 10px 0px;
+}
+
+/*text-editor css*/
+
+/*checkbox css*/
+
+/* The container */
+.container1{
+  display: block;
+  position: relative;
+  padding-top: 5px;
+  padding-left: 38px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container1 input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    height: 21px;
+    width: 21px;
+    background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.container1:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container1 input:checked ~ .checkmark {
+    background-color: #2557a7;
+    border-radius: 5px;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container1 input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container1 .checkmark:after {
+  left: 7.5px;
+  top: 4px;
+  width: 6px;
+  height: 11px;
+  border: solid #fff;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.md {
+    border: 2px solid #b5b5b5;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.job1 {
+    padding: 5px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+/* Create a custom checkbox */
+
+.frm-blk-street p {
+    font-size: 12px;
+}
+
+.container3 {
+    border: 1px solid #d5d5d5;
+    padding: 0px 40px;
+    border-radius: 7px;
+}
+
+.container3 h5 {
+    font-weight: 100;
+    font-size: 13px;
+}
+
+.fb-icn a {
+    color: #fff !important;
+    border-radius: 3px;
+    background-color: #2057ac;
+    display: inline-block;
+    width: 38%;
+    padding: 7px 8px 7px 6px;
+    border-radius: 7px;
+    text-transform: capitalize;
+}
+
+.fb-icn a i {
+    background-color: #fff;
+    color: #2057ac;
+    min-width: 14px;
+    text-align: center;
+    padding: 2px 0px 0;
+    border-radius: 3px;
+    margin: 0px 4px 0px 0px;
+}
+.modal-body-fb p {
+    font-size: 9px;
+    line-height: 14px;
+}
+
+.modal-dialog-15 {
+    width: 600px !important;
+}
+
+.check-tick-blk label {
+    font-size: 11px;
+}
+
+.checkmark-11 {
+    background: #fff;
+    border: 1px solid #2157ae;
+    border-radius: 3px;
+}
+
+.check-tick-blk {
+    background-color: #f2f2f0;
+    padding: 3px 0px;
+    margin-top: 10px;
+}
+
+.modal-body-fb {
+    overflow-y: scroll;
+    width: 100%;
+}
+.frm-btn {
+    float: right;
+    margin-top: 20px;
+}
+
+.frm-btn button {
+    color: #2156a6;
+}
+
+.frm-btn button:hover  {
+    background-color: #1f57ac;
+    color: #fff;
+}
+
+.modal-content-15 {
+    height: 440px;
+    width: 600px !important;
+}
+
+.row-app-ques .col-md-8 {
+    padding: 0;
+    margin-top: 4px;
+}
+
+.app-ques-head h5 {margin: 0px;position: relative;left: -18px;font-weight: 100;font-size: 13px;}
+
+.row-app-ques .col-md-4 {
+    padding-right: 0;
+}
+
+.app-ques-head {
+    width: 100%;
+}
+
+.app-ques-blk-ul ul {
+    display: flex;
+    align-items: baseline;
+}
+
+.app-ques-blk-ul ul li {
+    padding: 0px 7px 0px 0px;
+}
+
+.app-ques-blk-ul {
+    padding: 10px 10px;
+}
+
+.min-ed-check-blk label {
+    width: 100%;
+}
+
+.min-ed-check-blk {
+    float: right;
+}
+
+.row-app-ques {
+    border: 1px solid #e2e2e2;
+    margin-bottom: 30px;
+    width: 95%;
+    margin-left: 0px !important;
+    border-radius: 7px;
+}
+
+.modal-dialog-17 {
+    min-width: 600px;
+}
+
+.row-app-ques .close {position: absolute;top: -3px;right: 5px;opacity: 1 !important;font-size: 24px;}
+
+.row-app-ques {
+    position: relative;
+}
+
+.light-gry-blk {
+    background-color: #f2f2f0;
+    border-radius: 7px 7px 0px 0px;
+    padding: 10px 0px;
+    margin-bottom: 10px;
+}
+
+.blk-blue-1 {
+    display: flex;
+    align-items: center;
+    border: 1px solid #e2e2e2;
+    margin: 20px auto;
+    padding: 30px 10px;
+    border-radius: 7px;
+    width: 90%;
+}
+
+.blk-blue-txt {
+    margin: 0px 0px 0px 20px;
+}
+
+.ble-tp-blk {
+    background-color: #1f57ae;
+    border: 1px solid #1f57ae;
+    padding: 50px 15px;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.blue-are-blk h5 {
+    color: #fff;
+    font-size: 17px;
+    margin-bottom: 6px;
+}
+
+.blue-are-blk p {
+    color: #fff;
+}
+
+.blue-img {
+    text-align: center;
+}
+
+
+.blk-blue-txt h5 {
+    font-size: 13px;
+}
+
+.blk-blue-txt p {
+    font-size: 12px;
+    width: 100%;
+}
+
+.row.row-app-ques {
+    margin: 15px auto !important;
+    width: 90%;
+}
+
+.app-ques-head span {
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.app-ques-head h5 input {
+    width: 15%;
+    border: 0;
+    border-bottom: 1px solid;
+    background-color: #f2f2f0;
+}
+
+.select-blk select {
+    padding: 5px 10px;
+    border: 1px solid #d7d7d8;
+    border-radius: 5px;
+    font-size: 13px;
+    outline: none;
+}
+
+.of-blk p {
+    color: #838283;
+    font-weight: 600;
+}
+
+.input-blk input {
+    padding: 5px 10px;
+    border: 1px solid #d7d7d8;
+    border-radius: 5px;
+    font-size: 13px;
+    outline: none;
+}
+
+.exp-blk p {
+    color: #838283;
+    font-weight: 600;
+}
+
+label.least {
+    color: #838283;
+    font-size: 12px;
+    padding: 0px 6px;
+}
+
+.min-ed-check-blk {
+    border: 1px solid #d7d7d8;
+    padding: 2px 2px 2px 0px;
+    border-radius: 7px;
+    margin-bottom: 10px;
+}
+
+.app-ques-head {
+    margin: 0px 40px 0px 0px;
+}
+
+.valid-blk-blk {
+    width: 100%;
+    padding: 10px 10px;
+}
+
+.valid-blk input {
+    border: 1px solid #c6c7c5;
+    width: 89%;
+    padding: 5px 10px;
+    border-radius: 7px;
+}
+
+.ask-applicants-blk p {
+    color: #838283;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.app-ques-blk-ul .col-md-12 {
+    padding: 0;
+    margin: 0px 14px;
+}
+
+.browse-blk {
+    position: relative;
+    left: 30px;
+}
+
+.browse-blk select {
+    border: 1px solid #c6c7c5;
+    padding: 5px 10px 5px 2px;
+    color: #2557a7;
+    outline: none;
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: 7px;
+}
+
+.ble-tp-blk-1 {
+    margin-top: 80px;
+}
+
+.pre-record-blk .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pre-record-blk {
+    border: 1px solid #c6c7c5;
+    padding: 2px 10px;
+    margin: 10px 0px;
+    border-radius: 7px;
+}
+
+.pre-anchr-blk {
+    text-align: end;
+}
+
+.check-bx-blk label {
+    font-size: 13px;
+    position: relative;
+}
+
+.pre-anchr-blk a {
+    font-size: 13px;
+    text-decoration: underline !important;
+}
+
+.tip-blk {padding: 0px 20px;}
+
+.tip-blk h5 span {
+    color: #1f57ae;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.tip-blk h5 {
+    font-weight: 100;
+    font-size: 13px;
+}
+
+.tip-blk h5 i {
+    color: #1f57ae;
+}
+
+.modal-body-17 {
+    height: 100vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.update-blk input {
+    width: 94%;
+    margin-bottom: 5px;
+    padding: 7px 10px;
+}
+
+.update-blk button {
+    background: transparent;
+    border: 0;
+    color: #181817;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.add-blk-1 a {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.add-blk-1 {
+    padding: 0px 7px;
+}
+
+.communication-check-blk {
+    margin: 25px 0px;
+}
+
+.checkmark-12 {
+    width: 17px;
+    height: 17px;
+    top: 5px;
+    border-radius: 4px !important;
+}
+
+.checkmark-12::after {
+    top: 2px !important;
+    left: 5px !important;
+}
+
+.communication-check-blk label {
+    font-size: 11px;
+}
+.Employer-assist-blk h4 {
+    font-size: 17px;
+    color: #000000db;
+    font-weight: 700;
+}
+
+.employer-txt p {
+    font-size: 12px;
+    text-transform: capitalize;
+    margin: 0px 0px 1px;
+}
+
+.employer-txt a {
+    color: #2856a2;
+    font-size: 13px;
+    text-decoration: underline !important;
+    -webkit-text-stroke: thin;
+}
+
+.chart-blk h5 {
+    font-size: 13px;
+}
+
+.chart-blk img {
+    width: 100%;
+}
+
+.chart-blk {
+    text-align: center;
+    border: 1px solid #d5d5d5;
+    padding: 15px 10px;
+    margin: 15px 0px;
+    border-radius: 5px;
+}
+
+.viwe-msg-decline a {
+    font-size: 13px;
+    font-weight: 700;
+    color: #2d5aa3;
+}
+
+.easy-to-keep-candidate h6 {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.easy-to-keep-candidate ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+.easy-to-keep-candidate ul li {
+    font-size: 12px;
+    width: 42%;
+}
+
+.easy-to-keep-candidate {
+    padding-top: 20px;
+}
+.loc-bud-btn-1 {
+    text-align: end;
+}
+
+.communication-check-blk small {
+    position: relative;
+    font-size: 10px;
+    width: !important;
+}
+
+.communication-check-blk small {
+    position: relative;
+    font-size: 10px;
+    margin: 0px 0px;
+    position: relative;
+    left: 9px;
+    width: !important;
+    padding: 0px 30px;
+}
+
+.mesg-setting-blk h4 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #000000e3;
+}
+
+.mesg-setting-blk h6 {
+    font-size: 14px;
+    font-weight: 700;
+    color: #000;
+}
+
+.mesg-setting-blk p {
+    font-size: 12px;
+    color: #bdbdbd;
+}
+
+.modal-body-16 {
+    height: 600px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.loc-bud-btn-1 {
+  align-items: flex-start;
+  display: flex;
+}
+
+.loc-bud-btn-1 input {
+    margin: 3px 5px;
+}
+/*edit job post css end*/
+
+/*file-upload css start*/
+
+.wrapper {
+  margin: auto;
+  max-width: 950px;
+  padding-top: 60px;
+  text-align: center;
+}
+
+.upload-container {
+  background-color: rgb(239, 239, 239);
+  border-radius: 6px;
+  padding: 10px;
+  border: 5px dashed rgba(198, 198, 198, 0.65);
+}
+
+.border-container {
+  border: ;
+/*   border-radius: 4px; */
+  padding: 20px;
+}
+
+
+.border-container p {
+  color: #130f40;
+  font-weight: 600;
+  font-size: 1.1em;
+  letter-spacing: -1px;
+  margin-top: 30px;
+  margin-bottom: 0;
+  opacity: 0.65;
+}
+
+#file-browser {
+  text-decoration: none;
+  color: rgb(22,42,255);
+  border-bottom: 3px dotted rgba(22, 22, 255, 0.85);
+}
+
+#file-browser:hover {
+  color: rgb(0, 0, 255);
+  border-bottom: 3px dotted rgba(0, 0, 255, 0.85);
+}
+
+.icons {
+  color: #95afc0;
+  opacity: 0.55;
+}
+
+
+/*file-upload css end*/
+
+
+a.login img {width: auto;}
+
+@media only screen and (min-device-width:520px) and (max-device-width:767px) and (orientation:portrait) {}
+@media only screen and (min-device-width:120px) and (max-device-width:750px) and (orientation:landscape) {}
+@media only screen and (min-device-width:751px) and (max-device-width:999px) and (orientation:portrait) {}
+@media only screen and (min-device-width:751px) and (max-device-width:999px) and (orientation:landscape) {}
+@media only screen and (min-device-width:1000px) and (max-device-width:1030px) and (orientation:portrait) {}
+@media only screen and (min-device-width:1000px) and (max-device-width:1030px) and (orientation:landscape) {}
+
+@media only screen and (min-width: 1366px) and (max-width: 1920px){}
+@media only screen and (min-width: 1200px) and (max-width: 1365px){}
+@media only screen and (min-width: 992px) and (max-width: 1199px){}
+@media only screen and (min-width: 768px) and (max-width: 991px){}
+@media only screen and (min-width: 520px) and (max-width: 767px){}
+@media only screen and (min-width: 300px) and (max-width: 519px){}
